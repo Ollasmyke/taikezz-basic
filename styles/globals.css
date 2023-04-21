@@ -14,3 +14,12 @@ body {
   font-family: 'Krona One', sans-serif;
   @apply bg-white;
 }
+.headingOne {
+  @apply text-5xl;
+}
+.headingTwo {
+  @apply text-myBlack text-2xl;
+}
+.paragraph {
+  @apply font-jost text-[15px] font-light leading-6;
+}

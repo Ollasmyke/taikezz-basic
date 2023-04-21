@@ -13,9 +13,10 @@ module.exports = {
       },
       colors: {
         'primary': '#092441',
-        'myGray': '#B2B2B2',
+        'secondary': '#092441',
         'myBlack': '#1A1A1A',
-        'secondary': '#092441'
+        'myWhite': '#EAEAEA',
+        'myGray': '#B2B2B2',
       }
     },
   },
