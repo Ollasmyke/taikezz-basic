@@ -4,10 +4,10 @@ import Image from 'next/image';
 import circlesIcon from './../../public/icons/white_circles.svg';
 import rectangle from './../../public/icons/Rectangle.svg';
 
-export default function offers() {
+export default function Offers() {
   return (
     <>
-      <section className="w-full px-[160px] py-32 flex gap-x-28 justify-between text-myWhite border bg-secondary">
+      <section className="w-full px-[160px] py-32 flex gap-x-28 justify-between text-myWhite bg-secondary">
         <div className="w-[40%]">
             <div className="space-y-[80%]">
                 <div className="space-y-2 headingOne">

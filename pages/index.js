@@ -2,7 +2,8 @@ import Layout from './../components/layout';
 
 import Slide from './../components/slide';
 import Offers from './../components/home/offers';
-import Projects from './../components/home/latestProjects';
+import LatestProjects from './../components/home/latestProjects';
+import OtherProjects from './../components/home/otherProjects';
 
 export default function Home() {
   return (
@@ -10,7 +11,8 @@ export default function Home() {
       <section className="">
         <Slide />
         <Offers />
-        <Projects />
+        <LatestProjects />
+        <OtherProjects />
       </section>
     </Layout>
   );

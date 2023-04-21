@@ -6,7 +6,7 @@ import rectangle from './../../public/icons/Rectangle.svg';
 
 import ProjectGallery from './projectGallery';
 
-export default function offers() {
+export default function LatestProjects() {
   return (
     <>
       <section className="w-full space-y-12 px-[160px] py-32 flex-col justify-between text-myBlack border bg-myWhite">

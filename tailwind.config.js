@@ -15,6 +15,7 @@ module.exports = {
         'primary': '#092441',
         'secondary': '#092441',
         'myBlack': '#1A1A1A',
+        'lightBlue': '#D9DFE5',
         'myWhite': '#EAEAEA',
         'myGray': '#B2B2B2',
       }

@@ -4,9 +4,9 @@ import Link from 'next/link';
 
 import monoColorLogo from '../public/logos/taikezMonoColorLogo.svg';
 
-export default function header() {
+export default function Header() {
   return (
-    <header className="sticky top-0 w-full flex item justify-between h-20 px-16 border-b bg-white">
+    <header className="sticky top-0 z-50 w-full flex item justify-between h-20 px-16 border-b bg-white">
       {/* Logo section */}
       <div className="w-[33%] h-full">
         <Link href="/" className="flex justify-between items-end">
@@ -41,6 +41,7 @@ export default function header() {
           </ul>
         </nav>
       </div>
+      
     </header>
   );
 }
