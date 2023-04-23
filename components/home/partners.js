@@ -16,7 +16,7 @@ export default function Process() {
                 <h1>Sister</h1>
                 <h1>Companies</h1>
               </div>
-              <p className="paragraph">
+              <p className="paragraph myDarkGray">
                 To bring our vision into reality, we need the best partners out
                 there. We've joined hands with one of the best when it comes to
                 materials, lightning and furniture to achieve sophisticated
