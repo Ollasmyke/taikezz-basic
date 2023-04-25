@@ -31,7 +31,7 @@ const images = [
     src: '/../public/images/increaseBusinessGrowth.jpg',
     alt: 'Unleash Your Business Potential: Let Us Help You Grow Beyond Expectations',
     description:
-      'At Taikez Consultancy, we help businesses thrive by providing expert advice on growth and establishment strategies, backed by market research and a team of expatriates.',
+      'At Taikez, we help businesses thrive by providing expert advice on growth and establishment strategies, backed by market research and a team of expatriates.',
     link: 'https://example.com/image4',
   },
   {
@@ -100,7 +100,7 @@ const CarouselSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[70vh]">
+    <div className="relative w-full h-[75vh]">
       <div className="absolute top-0 left-0 w-full h-full">
         {images.map((image, index) => (
           <Image
@@ -122,7 +122,7 @@ const CarouselSlider = () => {
         ))}
       </div>
       <div
-        className="font-jost w-[40%] px-4 pt-3 pb-7 absolute bottom-10 bg-white/[0.7] left-1/2 transform -translate-x-1/2 text-center"
+        className="font-jost w-[60%] md:w-[50%] lg:w-[40%] px-4 pt-3 pb-7 absolute bottom-1/2 translate-y-1/2 bg-white/[0.7] left-1/2 transform -translate-x-1/2 text-center"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
@@ -148,7 +148,7 @@ const CarouselSlider = () => {
             key={index}
             onClick={() => handleIndicatorClick(index)}
             className={cn('w-2 h-2 rounded-full mr-4 transition-colors', {
-              'bg-secondary': activeIndex !== index,
+              'bg-myGray': activeIndex !== index,
               'bg-white': activeIndex === index,
             })}
           />
@@ -156,23 +156,23 @@ const CarouselSlider = () => {
       </div>
 
       <button
-        className="slideBtn left-24"
+        className="slideBtn left-10 md:left-16 lg:left-24"
         style={{ opacity: isPaused ? 1 : 0 }}
         onClick={handlePrevClick}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <ArrowBackIosRoundedIcon />
+        <ArrowBackIosRoundedIcon className="sliderArrowIcon" />
       </button>
 
       <button
-        className="slideBtn right-24"
+        className="slideBtn right-10 md:right-16 lg:right-24"
         style={{ opacity: isPaused ? 1 : 0 }}
         onClick={handleNextClick}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <ArrowForwardIosRoundedIcon />
+        <ArrowForwardIosRoundedIcon className="sliderArrowIcon" />
       </button>
     </div>
   );
