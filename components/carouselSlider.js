@@ -10,12 +10,12 @@ const images = [
     src: '/../public/images/slideFour.jpg',
     alt: 'Reliable Consultancy for Quality Site Projects & Modern Construction',
     description:
-      'Experience reliable and efficient construction services with our team of expert engineers and quality assurance professionals. We deliver quality projects on time with safety adherence.',
+      'Experience reliable and efficient construction services with Our team of expert engineers and quality assurance professionals. We deliver quality projects on time with safety adherence.',
     link: 'https://example.com/image1',
   },
   {
     src: '/../public/images/procurementServices.jpg',
-    alt: "Streamline Your Organization's Procurement Process with our Expertise",
+    alt: "Streamline Your Organization's Procurement Process with Our Expertise",
     description:
       'Our procurement team specializes in sourcing and purchasing general merchandise and equipment while negotiating the best prices and contracts for organizations.',
     link: 'https://example.com/image2',
@@ -24,7 +24,7 @@ const images = [
     src: '/../public/images/slideSeven.jpg',
     alt: "Efficient and Reliable Labour Sourcing for Your Organization's Needs",
     description:
-      'Learn how our consultancy company outsources skilled and unskilled labour, creating a reliable and cost-effective supply chain network. Discover our recommended steps.',
+      'Learn how Our consultancy company outsources skilled and unskilled labour, creating a reliable and cost-effective supply chain network. Discover Our recommended steps.',
     link: 'https://example.com/image3',
   },
   {
@@ -38,7 +38,7 @@ const images = [
     src: '/../public/images/retirementPlanning.png',
     alt: 'Unlock Your Retirement Potential with Our Expert Business Advice and Support',
     description:
-      'As a firm, our goal is to empower retirees by offering advice and support on establishing businesses during retirement. We strive to be a trustworthy confidant, strategist, and expert source of information.',
+      'As a firm, Our goal is to empower retirees by offering advice and support on establishing businesses during retirement. We strive to be a trustworthy confidant, strategist, and expert source of information.',
     link: 'https://example.com/image4',
   },
   {
@@ -52,7 +52,7 @@ const images = [
     src: '/../public/images/slideThree.jpg',
     alt: 'Experience Heavenly Homes with Our Interior Decoration and Furniture Fitting Services',
     description:
-      'Specializing in interior decoration, furniture fitting, and office fitting, our team of interior decorators offer exceptional services that turn your home into a heavenly abode.',
+      'Specializing in interior decoration, furniture fitting, and office fitting, Our team of interior decorators offer exceptional services that turn your home into a heavenly abode.',
     link: 'https://example.com/image4',
   },
 ];
@@ -126,7 +126,7 @@ const CarouselSlider = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <h3 className="text-xl text-myBlack leading-normal font-medium border-b pb-2 mb-3">
+        <h3 className="text-xl text-myBlack leading-tight md:leading-normal font-medium border-b pb-2 mb-3">
           {images[activeIndex].alt}
         </h3>
         <p className="text-base text-gray-800 leading-tight mb-7">
