@@ -7,30 +7,52 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 
 const images = [
   {
-    src: '/../public/images/slideOne.jpg',
-    alt: 'Reliable consultancy for quality site projects & modern construction',
-    description: 'Experience reliable and efficient construction services with our team of expert engineers and quality assurance professionals. We deliver quality projects on time with safety adherence.',
+    src: '/../public/images/slideFour.jpg',
+    alt: 'Reliable Consultancy for Quality Site Projects & Modern Construction',
+    description:
+      'Experience reliable and efficient construction services with our team of expert engineers and quality assurance professionals. We deliver quality projects on time with safety adherence.',
     link: 'https://example.com/image1',
   },
   {
-    src: '/../public/images/slideTwo.jpg',
-    alt: "Streamline Your Organization's Procurement Process with our expertise",
+    src: '/../public/images/procurementServices.jpg',
+    alt: "Streamline Your Organization's Procurement Process with our Expertise",
     description:
       'Our procurement team specializes in sourcing and purchasing general merchandise and equipment while negotiating the best prices and contracts for organizations.',
     link: 'https://example.com/image2',
   },
   {
-    src: '/../public/images/slideThree.jpg',
+    src: '/../public/images/slideSeven.jpg',
     alt: "Efficient and Reliable Labour Sourcing for Your Organization's Needs",
     description:
       'Learn how our consultancy company outsources skilled and unskilled labour, creating a reliable and cost-effective supply chain network. Discover our recommended steps.',
     link: 'https://example.com/image3',
   },
   {
-    src: '/../public/images/slideFour.jpg',
-    alt: "Unlock Your Business Potential: Let Us Help You Grow Beyond Expectations",
+    src: '/../public/images/increaseBusinessGrowth.jpg',
+    alt: 'Unleash Your Business Potential: Let Us Help You Grow Beyond Expectations',
     description:
-      'At our consulting firm, we help businesses thrive by providing expert advice on growth and establishment strategies, backed by market research and a team of expatriates.',
+      'At Taikez Consultancy, we help businesses thrive by providing expert advice on growth and establishment strategies, backed by market research and a team of expatriates.',
+    link: 'https://example.com/image4',
+  },
+  {
+    src: '/../public/images/retirementPlanning.png',
+    alt: 'Unlock Your Retirement Potential with Our Expert Business Advice and Support',
+    description:
+      'As a firm, our goal is to empower retirees by offering advice and support on establishing businesses during retirement. We strive to be a trustworthy confidant, strategist, and expert source of information.',
+    link: 'https://example.com/image4',
+  },
+  {
+    src: '/../public/images/financialServices.jpg',
+    alt: 'Secure Your Financial Future with Our Professional Audit and Advisory Services',
+    description:
+      'We understand the critical role communication plays in effective auditing and financial advice. Our team of professional auditors is dedicated to partnering with you to safeguard your financial status.',
+    link: 'https://example.com/image4',
+  },
+  {
+    src: '/../public/images/slideThree.jpg',
+    alt: 'Experience Heavenly Homes with Our Interior Decoration and Furniture Fitting Services',
+    description:
+      'Specializing in interior decoration, furniture fitting, and office fitting, our team of interior decorators offer exceptional services that turn your home into a heavenly abode.',
     link: 'https://example.com/image4',
   },
 ];
@@ -99,12 +121,17 @@ const CarouselSlider = () => {
           />
         ))}
       </div>
-      <div className="font-jost w-[40%] px-4 pt-3 pb-7 absolute bottom-10 bg-white/[0.7] left-1/2 transform -translate-x-1/2 text-center"
-                  onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+      <div
+        className="font-jost w-[40%] px-4 pt-3 pb-7 absolute bottom-10 bg-white/[0.7] left-1/2 transform -translate-x-1/2 text-center"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
       >
-        <h3 className="text-xl text-myBlack leading-normal capitalize font-medium border-b pb-2 mb-3">{images[activeIndex].alt}</h3>
-        <p className="text-base text-gray-800 leading-tight mb-7">{images[activeIndex].description}</p>
+        <h3 className="text-xl text-myBlack leading-normal font-medium border-b pb-2 mb-3">
+          {images[activeIndex].alt}
+        </h3>
+        <p className="text-base text-gray-800 leading-tight mb-7">
+          {images[activeIndex].description}
+        </p>
         <a
           href={images[activeIndex].link}
           target="_blank"
