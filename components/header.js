@@ -5,9 +5,11 @@ import { useRouter } from 'next/router';
 import monoColorLogo from '../public/logos/taikezMonoColorLogo.svg';
 
 import AnimatedMenuIcon from './animatedMenuIcon';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false); // Define state for dropdown
 
   useEffect(() => {
     function handleScroll() {
@@ -76,17 +78,77 @@ export default function Header() {
       <div className="flex w-[41%] justify-end items-end pb-0 h-full">
         <AnimatedMenuIcon />
         <nav className="hidden w-full font-jost lg:flex justify-between text-[16px] text-myBlack font-normal">
-          {navMenu.map((link, name) => (
-            <Link
-              key={name}
-              href={link.link}
-              className={` ${
-                router.pathname === link.link ? 'activeLink' : 'notActiveLink'
-              }`}
-            >
-              {link.name}
-            </Link>
-          ))}
+          {navMenu.map((link, name) => {
+            if (link.name === 'Services') {
+              // Add onMouseEnter and onMouseLeave events to the Services link
+              return (
+                <div
+                  key={name}
+                  onMouseEnter={() => setIsDropdownOpen(true)}
+                  onMouseLeave={() => setIsDropdownOpen(false)}
+                  className="relative"
+                >
+                  <Link
+                    href={link.link}
+                    className={`${
+                      router.pathname === link.link
+                        ? 'activeLink'
+                        : 'notActiveLink'
+                    }`}
+                  >
+                    {link.name}
+                    <ExpandMoreIcon
+                      className={`${
+                        isDropdownOpen ? 'rotate-180 ease-in' : ''
+                      } group-hover:rotate-180 ease-in transition-all duration-150`}
+                    />
+                  </Link>
+                  {isDropdownOpen && (
+                    <div className="absolute top-full left-0 w-56 bg-white shadow-md rounded-lg -mt-2">
+                      <Link
+                        href="/service1"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Service 1
+                      </Link>
+                      <Link
+                        href="/service2"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Service 2
+                      </Link>
+                      <Link
+                        href="/service3"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Service 3
+                      </Link>
+                      <Link
+                        href="/service4"
+                        className="block px-4 py-2 hover:bg-gray-100"
+                      >
+                        Service 4
+                      </Link>
+                    </div>
+                  )}
+                </div>
+              );
+            } else {
+              return (
+                <Link
+                  key={name}
+                  href={link.link}
+                  className={`${
+                    router.pathname === link.link
+                      ? 'activeLink'
+                      : 'notActiveLink'
+                  }`}
+                >
+                  {link.name}
+                </Link>
+              );
+            }
+          })}
         </nav>
       </div>
     </header>
