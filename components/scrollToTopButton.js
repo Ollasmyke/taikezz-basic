@@ -18,7 +18,7 @@ const ScrollToTopButton = ({ isVisible }) => {
         isVisible ? 'opacity-100' : 'opacity-0'
       )}
     >
-      <ScrollLink to="top" smooth duration={10}>
+      <ScrollLink to="top" smooth duration={300}>
         <button
           className="scrollToTopBtn"
           onClick={handleScrollTop}
