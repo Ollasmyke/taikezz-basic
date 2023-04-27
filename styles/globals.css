@@ -15,10 +15,10 @@ body {
   @apply bg-white;
 }
 .activeLink {
-  @apply border-b-2 border-myGray tracking-wider text-center font-medium;
+  @apply border-b-2 border-myBlack tracking-wider text-center font-medium;
 }
 .notActiveLink {
-  @apply pb-1 border-b-2 border-transparent tracking-wider text-center font-medium hover:border-b-2 hover:border-myGray;
+  @apply pb-1 border-b-2 border-transparent tracking-wider text-center font-medium hover:border-b-2 hover:border-myBlack;
 }
 .headingOne {
   @apply uppercase lg:text-5xl md:text-[40px] text-3xl md:w-full lg:leading-[60px] md:leading-[58px] leading-[40px];
