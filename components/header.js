@@ -99,35 +99,35 @@ export default function Header() {
                     {link.name}
                     <ExpandMoreIcon
                       className={`${
-                        isDropdownOpen ? 'rotate-180 ease-in' : ''
+                        isDropdownOpen ? 'w-5 ms-2 rotate-180 ease-in' : 'w-5 ms-2'
                       } group-hover:rotate-180 ease-in transition-all duration-150`}
                     />
                   </Link>
                   {isDropdownOpen && (
-                    <div className="absolute top-full left-0 w-56 bg-white shadow-md rounded-lg -mt-2">
+                    <div className="absolute overflow-hidden top-full left-0 w-56 bg-white shadow-md rounded-lg -mt-2">
                       <Link
                         href="/service1"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Service 1
+                        We Supervise Constructions
                       </Link>
                       <Link
                         href="/service2"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Service 2
+                        We Source Supplies
                       </Link>
                       <Link
                         href="/service3"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Service 3
+                        We Source Labour
                       </Link>
                       <Link
                         href="/service4"
                         className="block px-4 py-2 hover:bg-gray-100"
                       >
-                        Service 4
+                        We Manage Biz Expansion
                       </Link>
                     </div>
                   )}

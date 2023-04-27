@@ -12,49 +12,49 @@ const images = [
     alt: 'Reliable Consultancy for Quality Site Projects & Modern Construction',
     description:
       'Experience reliable and efficient construction services with Our team of expert engineers and quality assurance professionals. We deliver quality projects on time with safety adherence.',
-    Link: 'https://example.com/image1',
+    Link: '/',
   },
   {
     src: '/../public/images/procurementServices.jpg',
     alt: "Streamline Your Organization's Procurement Process with Our Expertise",
     description:
       'Our procurement team specializes in sourcing and purchasing general merchandise and equipment while negotiating the best prices and contracts for organizations.',
-    Link: 'https://example.com/image2',
+    Link: '/',
   },
   {
     src: '/../public/images/slideSeven.jpg',
     alt: "Efficient and Reliable Labour Sourcing for Your Organization's Needs",
     description:
       'Learn how Our consultancy company outsources skilled and unskilled labour, creating a reliable and cost-effective supply chain network. Discover Our recommended steps.',
-    Link: 'https://example.com/image3',
+    Link: '/',
   },
   {
     src: '/../public/images/increaseBusinessGrowth.jpg',
     alt: 'Unleash Your Business Potential: Let Us Help You Grow Beyond Expectations',
     description:
       'At Taikez, we help businesses thrive by providing expert advice on growth and establishment strategies, backed by market research and a team of expatriates.',
-    Link: 'https://example.com/image4',
+    Link: '/',
   },
   {
     src: '/../public/images/retirementPlanning.png',
     alt: 'Unlock Your Retirement Potential with Our Expert Business Advice and Support',
     description:
       'As a firm, Our goal is to empower retirees by offering advice and support on establishing businesses during retirement. We strive to be a trustworthy confidant, strategist, and expert source of information.',
-    Link: 'https://example.com/image4',
+    Link: '/',
   },
   {
     src: '/../public/images/financialServices.jpg',
     alt: 'Secure Your Financial Future with Our Professional Audit and Advisory Services',
     description:
       'We understand the critical role communication plays in effective auditing and financial advice. Our team of professional auditors is dedicated to partnering with you to safeguard your financial status.',
-    Link: 'https://example.com/image4',
+    Link: '/',
   },
   {
     src: '/../public/images/slideThree.jpg',
     alt: 'Experience Heavenly Homes with Our Interior Decoration and Furniture Fitting Services',
     description:
       'Specializing in interior decoration, furniture fitting, and office fitting, Our team of interior decorators offer exceptional services that turn your home into a heavenly abode.',
-    Link: 'https://example.com/image4',
+    Link: '/',
   },
 ];
 
@@ -149,8 +149,8 @@ const CarouselSlider = () => {
             key={index}
             onClick={() => handleIndicatorClick(index)}
             className={cn('w-2 h-2 rounded-full mr-4 transition-colors', {
-              'bg-myGray': activeIndex !== index,
-              'bg-white': activeIndex === index,
+              'bg-white': activeIndex !== index,
+              'bg-secondary': activeIndex === index,
             })}
           />
         ))}
