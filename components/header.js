@@ -74,7 +74,7 @@ export default function Header() {
 
       {/* Menu section */}
       <div className="flex w-[41%] justify-end items-end pb-0 h-full">
-          <AnimatedMenuIcon />
+        <AnimatedMenuIcon />
         <nav className="hidden w-full font-jost lg:flex justify-between text-[16px] text-myBlack font-normal">
           {navMenu.map((link, name) => (
             <Link

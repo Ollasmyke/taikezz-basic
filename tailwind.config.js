@@ -12,14 +12,15 @@ module.exports = {
         'jost': ['Jost', 'sans-serif'],
       },
       colors: {
-        'primary': '#092441',
+        'accent': '#95060A',
+        'accentHover': '#B40001',
         'secondary': '#092441',
-        'myBlack': '#1A1A1A',
+        'myBlack': '#2B2C32',
         'lightBlue': '#D9DFE5',
         'myWhite': '#EAEAEA',
         'myGray': '#B2B2B2',
       }
     },
   },
-  plugins: [],
+  plugins: [require("tw-elements/dist/plugin")],
 }

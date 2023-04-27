@@ -1,19 +1,27 @@
 import Layout from './../components/layout';
 
-import Slide from './../components/slide';
-import Offers from './../components/home/offers';
-import LatestProjects from './../components/home/latestProjects';
-import OtherProjects from './../components/home/otherProjects';
+import CarouselSlider from './../components/carouselSlider';
+import Offers from './../components/sections/offers';
+import ConstructionProjects from './../components/sections/constructionProjects';
+import SupplySourcing from '../components/sections/supplySourcing';
+import ClientFeedback from './../components/sections/clientFeedback';
+import Process from './../components/sections/process';
+import MeetOurTeam from './../components/sections/meetOurTeam';
+import Partners from './../components/sections/partners';
+import ContactUs from './../components/sections/contactUs';
 
-export default function Home() {
+export default function sections() {
   return (
     <Layout title="Home ">
-      <section className="">
-        <Slide />
-        <Offers />
-        <LatestProjects />
-        <OtherProjects />
-      </section>
+      <CarouselSlider />
+      <Offers />
+      <ConstructionProjects />
+      <SupplySourcing />
+      <ClientFeedback />
+      <Process />
+      <MeetOurTeam />
+      <Partners />
+      <ContactUs />
     </Layout>
   );
 }

@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const CtaButton = ({ link, text }) => {
   return (
-    <Link href={link} className="float-right">
+    <Link href={link} className="float-left lg:float-right">
       <button className="ctaBtn">
         {text}
       </button>
