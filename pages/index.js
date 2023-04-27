@@ -5,7 +5,7 @@ import Offers from './../components/sections/offers';
 import ConstructionProjects from './../components/sections/constructionProjects';
 import SupplySourcing from '../components/sections/supplySourcing';
 import ClientFeedback from './../components/sections/clientFeedback';
-import Process from './../components/sections/process';
+// import Process from './../components/sections/process';
 import MeetOurTeam from './../components/sections/meetOurTeam';
 import Partners from './../components/sections/partners';
 import ContactUs from './../components/sections/contactUs';
@@ -18,7 +18,7 @@ export default function sections() {
       <ConstructionProjects />
       <SupplySourcing />
       <ClientFeedback />
-      <Process />
+      {/* <Process /> */}
       <MeetOurTeam />
       <Partners />
       <ContactUs />
