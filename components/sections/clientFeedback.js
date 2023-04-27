@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 import circlesIcon from './../../public/icons/white_circles.svg';
 
-export default function clientFeedback() {
+export default function ClientFeedback() {
   return (
     <div className="sectionDefault space-y-12 lg:space-y-6 text-myWhite bg-secondary">
       <h1 className="headingOne lg:m-0">CLIENT FEEDBACK</h1>

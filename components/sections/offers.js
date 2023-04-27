@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import circlesIcon from './../../public/icons/white_circles.svg';
-import rectangle from './../../public/icons/Rectangle.svg';
+import rectangle from './../../public/icons/rectangle.svg';
 
 export default function Offers() {
   return (

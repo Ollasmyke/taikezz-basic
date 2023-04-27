@@ -108,10 +108,10 @@ const CarouselSlider = () => {
             key={index}
             src={image.src}
             alt={image.alt}
-            layout="fill"
-            objectFit="cover"
+            width={1000}
+            height={1000}
             className={cn(
-              'absolute top-0 left-0 w-full h-full transition-opacity',
+              'absolute top-0 left-0 w-full h-full object-cover transition-opacity',
               {
                 'opacity-100': activeIndex === index,
                 'opacity-0': activeIndex !== index,
