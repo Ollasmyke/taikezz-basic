@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import circlesIcon from './../../public/icons/white_circles.svg';
-import rectangle from './../../public/icons/rectangle.svg';
+import Rectangle from './../../public/icons/rectangle.svg';
 
 export default function Offers() {
   return (
@@ -10,7 +10,7 @@ export default function Offers() {
       <section className="sectionDefault lg:flex gap-x-28 justify-between text-myWhite bg-secondary">
         <div className="mb-16 md:mb-20 lg:mb-0 md:w-full lg:w-[40%] flex flex-col justify-between">
           <h1 className="headingOne text-left">WHAT WE OFFER</h1>
-          <Image src={rectangle} alt="" className="rectangularBar hidden lg:flex" />
+          <Image src={Rectangle} alt="" className="rectangularBar hidden lg:flex" />
         </div>
 
         <div className="md:w-full lg:w-[60%] lg:flex-col space-y-14 justify-self-end">
@@ -55,7 +55,7 @@ export default function Offers() {
             </div>
           </div>
         </div>
-        <Image src={rectangle} alt="" className="w-10 mt-20 flex lg:hidden" />
+        <Image src={Rectangle} alt="" className="w-10 mt-20 flex lg:hidden" />
       </section>
     </>
   );

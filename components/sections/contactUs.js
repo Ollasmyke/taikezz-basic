@@ -8,7 +8,7 @@ import TextField from '@mui/material/TextField';
 import SendBtn from './../ctaButton';
 
 import circlesIcon from './../../public/icons/white_circles.svg';
-import rectangle from './../../public/icons/blackRectangle.svg';
+import BlackRectangle from './../../public/icons/blackRectangle.svg';
 import demdarzzy from './../../public/icons/demdarzzy.svg';
 
 export default function ContactUs() {
@@ -23,7 +23,7 @@ export default function ContactUs() {
             we'd love to hear from you.
           </p>
         </div>
-        <Image src={rectangle} alt="" className="rectangularBar" />
+        <Image src={BlackRectangle} alt="" className="rectangularBar" />
       </div>
 
       <Box

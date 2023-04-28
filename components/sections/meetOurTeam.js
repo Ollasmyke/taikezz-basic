@@ -3,7 +3,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import CeoPhoto from './../../public/images/ceo.jpg';
-import rectangle from './../../public/icons/blackRectangle.svg';
+import BlackRectangle from './../../public/icons/blackRectangle.svg';
 
 const team = [
   {
@@ -41,7 +41,7 @@ export default function MeetOurTeam() {
             from architecture to interior design and sales.
           </p>
         </div>
-        <Image src={rectangle} alt="" className="hidden rectangularBar" />
+        <Image src={BlackRectangle} alt="" className="hidden rectangularBar" />
       </div>
 
       <div className="lg:w-[60%] lg:grid lg:grid-cols-2 lg:grid-rows-2 lg:gap-6 lg:gap-x-4 space-y-14 lg:space-y-0 mt-20 lg:m-0">
@@ -61,7 +61,7 @@ export default function MeetOurTeam() {
             <p className="paragraph text-myBlack mt-1.5">{member.title}</p>
           </div>
         ))}
-        <Image src={rectangle} alt="" className="lg:hidden rectangularBar" />
+        <Image src={BlackRectangle} alt="" className="lg:hidden rectangularBar" />
       </div>
     </section>
   );

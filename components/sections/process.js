@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import circlesIcon from './../../public/icons/white_circles.svg';
-import rectangle from './../../public/icons/blackRectangle.svg';
+import BlackRectangle from './../../public/icons/blackRectangle.svg';
 
 export default function Process() {
   return (
@@ -15,7 +15,7 @@ export default function Process() {
               <h1>OF BUYING</h1>
             </div>
             <div className="w-full">
-              <Image src={rectangle} alt="" className="rectangularBar" />
+              <Image src={BlackRectangle} alt="" className="rectangularBar" />
             </div>
           </div>
         </div>
