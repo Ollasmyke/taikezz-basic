@@ -110,6 +110,7 @@ const CarouselSlider = () => {
             alt={image.alt}
             width={1000}
             height={1000}
+            priority={true}
             className={cn(
               'absolute top-0 left-0 w-full h-full object-cover transition-opacity',
               {
