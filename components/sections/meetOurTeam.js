@@ -34,10 +34,12 @@ export default function MeetOurTeam() {
       <div className="w-full lg:w-[35%] lg:flex lg:flex-col lg:justify-between">
         <div className="space-y-6">
           <h1 className="headingOne">MEET OUR TEAM</h1>
-          <h4 className="paragraph">A COLLECTIVE, THAT MAKES DREAMS COME TRUE</h4>
+          <h4 className="paragraph">
+            A COLLECTIVE, THAT MAKES DREAMS COME TRUE
+          </h4>
           <p className="paragraph text-myBlack lg:mt-5">
             Our strength lies in our individuality. Set up by Esther Bryce,
-            Presson's team strives to bring in the best talent in various fields,
+            Taikez team strives to bring in the best talent in various fields,
             from architecture to interior design and sales.
           </p>
         </div>
@@ -52,8 +54,7 @@ export default function MeetOurTeam() {
               alt={member.name}
               width={1000}
               height={1000}
-              objectFit="cover"
-              className="w-full"
+              className="w-full object-cover"
             />
             <p className="text-base text-myBlack uppercase mt-5 lg:mt-5">
               {member.name}
@@ -61,7 +62,11 @@ export default function MeetOurTeam() {
             <p className="paragraph text-myBlack mt-1.5">{member.title}</p>
           </div>
         ))}
-        <Image src={BlackRectangle} alt="" className="lg:hidden rectangularBar" />
+        <Image
+          src={BlackRectangle}
+          alt=""
+          className="lg:hidden rectangularBar"
+        />
       </div>
     </section>
   );
