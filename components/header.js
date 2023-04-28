@@ -113,7 +113,7 @@ export default function Header() {
                     />
                   </Link>
                   {isDropdownOpen && (
-                    <div className="absolute overflow-hidden top-full left-0 w-56 bg-white shadow-md rounded-lg -mt-2">
+                    <div className="absolute overflow-hidden top-full left-0 w-56 bg-white shadow-md rounded-lg -mt-0.5">
                       <Link
                         href="/service1"
                         className="block px-4 py-2 hover:bg-gray-100"

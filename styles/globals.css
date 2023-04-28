@@ -20,6 +20,12 @@ body {
 .notActiveLink {
   @apply pb-1 border-b-2 border-transparent tracking-wider text-center font-medium hover:border-b-2 hover:border-myBlack;
 }
+.navLink {
+  @apply py-2 my-2;
+}
+.servLink {
+  @apply pl-12 py-2;
+}
 .headingOne {
   @apply uppercase lg:text-5xl md:text-[40px] text-3xl md:w-full lg:leading-[60px] md:leading-[58px] leading-[40px];
 }
