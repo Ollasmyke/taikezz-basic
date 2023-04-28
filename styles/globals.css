@@ -65,6 +65,7 @@ body {
 .clientFeedbackWrapper {
   @apply lg:flex lg:flex-row space-x-3 flex flex-col w-full;
 }
+/* Animated Hamburger menu */
 .hamburger-menu {
   @apply relative top-2 space-y-2 flex-col justify-center items-center w-[30px] h-[30px];
 }
@@ -75,21 +76,31 @@ body {
 }
 
 .hamburger-menu__bar:first-child {
-  @apply origin-top-left;
+  @apply origin-top-left transform rotate-0 transition-all duration-200;
 }
 
 .hamburger-menu__bar:last-child {
-  @apply origin-top-left;
+  @apply origin-bottom-left transform rotate-0 transition-all duration-200;
+}
+
+.hamburger-menu__bar:nth-child(2) {
+  @apply transition-all duration-100;
 }
 
 .hamburger-menu.open .hamburger-menu__bar:first-child {
-  transform: translateY(0px) rotate(45deg);
+  transform: rotate(45deg);
 }
 
 .hamburger-menu.open .hamburger-menu__bar:last-child {
-  transform: translateY(-20px) rotate(-45deg);
+  transform: rotate(-45deg);
 }
 
 .hamburger-menu.open .hamburger-menu__bar:nth-child(2) {
-  transform: scale(0);
+  opacity: 0;
 }
+
+.hamburger-menu.open .hamburger-menu__bar:first-child,
+.hamburger-menu.open .hamburger-menu__bar:last-child {
+  @apply transition-all duration-200;
+}
+

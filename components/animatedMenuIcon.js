@@ -9,7 +9,7 @@ export default function AnimatedMenuIcon() {
 
   return (
     <button
-      className="lg:hidden relative bottom-3 z-10 block border"
+      className="lg:hidden relative bottom-3 z-10 block"
       onClick={handleMenuToggle}
     >
       <span className="sr-only">Toggle mobile menu</span>
