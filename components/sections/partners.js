@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import circlesIcon from './../../public/icons/white_circles.svg';
-import rectangle from './../../public/icons/rectangle.svg';
+import Rectangle from './../../public/icons/rectangle.svg';
 import demdarzzy from './../../public/icons/demdarzzy.svg';
 
 export default function Partners() {
@@ -19,7 +19,7 @@ export default function Partners() {
               results.
             </p>
           </div>
-          <Image src={rectangle} alt="" className="rectangularBar" />
+          <Image src={Rectangle} alt="" className="rectangularBar" />
         </div>
 
         <div className="w-[40%] space-y-20">

@@ -2,7 +2,6 @@
 import React from 'react';
 import Image from 'next/image';
 import circlesIcon from './../../public/icons/black_circles.svg';
-import rectangle from './../../public/icons/rectangle.svg';
 
 import ProjectGallery from './projectGallery';
 
