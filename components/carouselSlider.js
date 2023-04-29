@@ -8,49 +8,49 @@ import ArrowForwardIosRoundedIcon from '@mui/icons-material/ArrowForwardIosRound
 
 const images = [
   {
-    src: '/../public/images/slideFour.jpg',
+    src: 'https://storage.googleapis.com/choplyfe-staging-storage/events/taikezz/slideFour.jpg',
     alt: 'Reliable Consultancy for Quality Site Projects & Modern Construction',
     description:
       'Experience reliable and efficient construction services with Our team of expert engineers and quality assurance professionals. We deliver quality projects on time with safety adherence.',
     link: '/services/construction',
   },
   {
-    src: '/../public/images/procurementServices.jpg',
+    src: 'https://storage.googleapis.com/choplyfe-staging-storage/events/taikezz/procurementServices.jpg',
     alt: "Streamline Your Organization's Procurement Process with Our Expertise",
     description:
       'Our procurement team specializes in sourcing and purchasing general merchandise and equipment while negotiating the best prices and contracts for organizations.',
     link: '/services/procurement',
   },
   {
-    src: '/../public/images/slideSeven.jpg',
+    src: 'https://storage.googleapis.com/choplyfe-staging-storage/events/taikezz/slideSeven.jpg',
     alt: "Efficient and Reliable Labour Sourcing for Your Organization's Needs",
     description:
       'Learn how Our consultancy company outsources skilled and unskilled labour, creating a reliable and cost-effective supply chain network. Discover Our recommended steps.',
     link: '/services/labour-sourcing',
   },
   {
-    src: '/../public/images/increaseBusinessGrowth.jpg',
+    src: 'https://storage.googleapis.com/choplyfe-staging-storage/events/taikezz/increaseBusinessGrowth.jpg',
     alt: 'Unleash Your Business Potential: Let Us Help You Grow Beyond Expectations',
     description:
       'At Taikez, we help businesses thrive by providing expert advice on growth and establishment strategies, backed by market research and a team of expatriates.',
     link: '/services/business-growth',
   },
   {
-    src: '/../public/images/retirementPlanning.png',
+    src: 'https://storage.googleapis.com/choplyfe-staging-storage/events/taikezz/retirementPlanning.png',
     alt: 'Unlock Your Retirement Potential with Our Expert Business Advice and Support',
     description:
       'As a firm, Our goal is to empower retirees by offering advice and support on establishing businesses during retirement. We strive to be a trustworthy confidant, strategist, and expert source of information.',
     link: '/services/retirement-planning',
   },
   {
-    src: '/../public/images/financialServices.jpg',
+    src: 'https://storage.googleapis.com/choplyfe-staging-storage/events/taikezz/financialServices.jpg',
     alt: 'Secure Your Financial Future with Our Professional Audit and Advisory Services',
     description:
       'We understand the critical role communication plays in effective auditing and financial advice. Our team of professional auditors is dedicated to partnering with you to safeguard your financial status.',
     link: '/services/financial-services',
   },
   {
-    src: '/../public/images/slideThree.jpg',
+    src: 'https://storage.googleapis.com/choplyfe-staging-storage/events/taikezz/slideThree.jpg',
     alt: 'Experience Heavenly Homes with Our Interior Decoration and Furniture Fitting Services',
     description:
       'Specializing in interior decoration, furniture fitting, and office fitting, Our team of interior decorators offer exceptional services that turn your home into a heavenly abode.',
