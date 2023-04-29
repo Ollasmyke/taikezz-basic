@@ -41,13 +41,13 @@ body {
 .ctaBtn {
   @apply font-krona uppercase text-[10px] md:text-[12px] px-14 md:px-16 py-3 text-myWhite bg-accent hover:bg-accentHover;
 }
-.slideImage {
-  @apply block w-full h-[80vh] object-cover;
-}
 .slideBtn {
   @apply absolute top-1/2 p-2.5 md:p-3.5 lg:p-4 bg-white/[0.6] text-black/[0.3] rounded-full border-[1.5px] border-myWhite z-10 transform -translate-y-1/2 transition-opacity duration-300 hover:bg-myWhite hover:text-myBlack/[0.7];
 }
 .sliderArrowIcon {
+  @apply w-[80%] md:w-[80%] lg:w-full;
+}
+.arrowUpIosRoundedIcon {
   @apply w-[70%] md:w-[80%] lg:w-full;
 }
 .paragraph {
@@ -60,7 +60,7 @@ body {
   @apply text-gray-500;
 }
 .scrollToTopBtn {
-  @apply rotate-90 p-4 bg-white/[0.6] text-black/[0.3] rounded-full border-[1.5px] border-white z-10 transform -translate-y-1/2 transition-opacity duration-300 hover:bg-white hover:text-myBlack/[0.7];
+  @apply rotate-90 p-2 lg:p-4 bg-white/[0.6] text-black/[0.3] rounded-full border-[1.5px] border-white z-10 transform -translate-y-1/2 transition-opacity duration-300 hover:bg-white hover:text-myBlack/[0.7];
 }
 .sectionDefault {
   @apply w-full px-[20px] md:px-[160px] py-[85px] md:py-28;

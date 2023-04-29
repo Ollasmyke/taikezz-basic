@@ -14,7 +14,7 @@ const ScrollToTopButton = ({ isVisible }) => {
   return (
     <div
       className={cn(
-        'fixed bottom-4 right-10 z-50',
+        'fixed bottom-4 right-5 md:right-10 z-50',
         isVisible ? 'opacity-100' : 'opacity-0'
       )}
     >
@@ -23,7 +23,7 @@ const ScrollToTopButton = ({ isVisible }) => {
           className="scrollToTopBtn"
           onClick={handleScrollTop}
         >
-          <ArrowUpIosRoundedIcon />
+          <ArrowUpIosRoundedIcon className="arrowUpIosRoundedIcon" />
         </button>
       </ScrollLink>
     </div>
