@@ -101,7 +101,7 @@ const CarouselSlider = () => {
   };
 
   return (
-    <div className="relative w-full h-[75vh]">
+    <div className="relative w-full h-[60vh] lg:h-[75vh]">
       <div className="absolute top-0 left-0 w-full h-full">
         {images.map((image, index) => (
           <Image
@@ -124,11 +124,11 @@ const CarouselSlider = () => {
         ))}
       </div>
       <div
-        className="font-jost w-[60%] md:w-[50%] lg:w-[40%] px-4 pt-3 pb-7 absolute bottom-1/2 translate-y-1/2 bg-white/[0.7] left-1/2 transform -translate-x-1/2 text-center"
+        className="font-jost w-[70%] md:w-[50%] lg:w-[40%] px-4 pt-3 pb-7 absolute bottom-1/2 translate-y-1/2 bg-white/[0.7] left-1/2 transform -translate-x-1/2 text-center"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <h3 className="text-xl text-myBlack leading-tight md:leading-normal font-medium border-b pb-2 mb-3">
+        <h3 className="text-base md:text-xl text-myBlack leading-tight md:leading-normal font-medium border-b pb-2 mb-3">
           {images[activeIndex].alt}
         </h3>
         <p className="text-base text-gray-800 leading-tight mb-7">
@@ -136,15 +136,13 @@ const CarouselSlider = () => {
         </p>
         <Link
           href={images[activeIndex].link}
-          // target="_blank"
-          // rel="noopener noreferrer"
           className="ctaBtn"
         >
           Learn More
         </Link>
       </div>
 
-      <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2">
+      <div className="absolute bottom-5 md:bottom-4 left-1/2 transform -translate-x-1/2">
         {images.map((image, index) => (
           <button
             key={index}

@@ -75,7 +75,7 @@ export default function Header() {
             alt="Taikez logo"
             className="w-[80px] h-[80px] md:w-[110px] md:h-[110px] lg:w-[130px] lg:h-[130px] p-2 rounded-full bg-white"
           />
-          <h2 className="font-jost text-[20px] md:text-[26px] absolute bottom-0 left-[107px] md:left-[140px] lg:left-[205px] font-medium text-myBlack">
+          <h2 className="font-jost text-[20px] md:text-[26px] absolute bottom-0 left-[104px] md:left-[140px] lg:left-[205px] font-medium text-myBlack">
             Taikez Consultancy
           </h2>
         </Link>
