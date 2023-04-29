@@ -20,6 +20,15 @@ body {
 .notActiveLink {
   @apply pb-1 border-b-2 border-transparent tracking-wider text-center font-medium hover:border-b-2 hover:border-myBlack;
 }
+.navLink {
+  @apply py-2 my-2;
+}
+.servLink {
+  @apply pl-12 py-2;
+}
+.subLink {
+  @apply block px-4 py-2 hover:font-medium hover:bg-gray-100;
+}
 .headingOne {
   @apply uppercase lg:text-5xl md:text-[40px] text-3xl md:w-full lg:leading-[60px] md:leading-[58px] leading-[40px];
 }
@@ -36,13 +45,16 @@ body {
   @apply block w-full h-[80vh] object-cover;
 }
 .slideBtn {
-  @apply absolute top-1/2 p-2.5 md:p-3.5 lg:p-4 bg-white/[0.6] text-black/[0.3] rounded-full border-[1.5px] border-white z-10 transform -translate-y-1/2 transition-opacity duration-300 hover:bg-white hover:text-myBlack/[0.7];
+  @apply absolute top-1/2 p-2.5 md:p-3.5 lg:p-4 bg-white/[0.6] text-black/[0.3] rounded-full border-[1.5px] border-myWhite z-10 transform -translate-y-1/2 transition-opacity duration-300 hover:bg-myWhite hover:text-myBlack/[0.7];
 }
 .sliderArrowIcon {
   @apply w-[70%] md:w-[80%] lg:w-full;
 }
 .paragraph {
   @apply font-jost text-[16px] lg:text-[15px] font-light leading-7 lg:leading-6;
+}
+.paragraphBold {
+  @apply font-jost text-[16px] lg:text-[15px] font-normal leading-7 lg:leading-6;
 }
 .myDarkGray {
   @apply text-gray-500;

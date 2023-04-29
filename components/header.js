@@ -40,19 +40,19 @@ export default function Header() {
     },
     {
       name: 'Services',
-      link: '/pages/services',
+      link: '/services',
     },
     {
       name: 'Press',
-      link: '/pages/press',
+      link: '/press',
     },
     {
       name: 'Team',
-      link: '/pages/team',
+      link: '/team',
     },
     {
-      name: 'Contact',
-      link: '/pages/contact',
+      name: 'Contact Us',
+      link: '/contact',
     },
   ];
 
@@ -97,44 +97,37 @@ export default function Header() {
                   onMouseLeave={() => setIsDropdownOpen(false)}
                   className="relative"
                 >
-                  <Link
-                    href={link.link}
-                    className={`${
-                      router.pathname === link.link
-                        ? 'activeLink'
-                        : 'notActiveLink'
-                    }`}
-                  >
+                  <div className="notActiveLink cursor-pointer">
                     {link.name}
                     <ExpandMoreIcon
                       className={`${
                         isDropdownOpen ? 'w-5 ms-2 rotate-180 ease-in' : 'w-5 ms-2'
                       } group-hover:rotate-180 ease-in transition-all duration-150`}
                     />
-                  </Link>
+                  </div>
                   {isDropdownOpen && (
-                    <div className="absolute overflow-hidden top-full left-0 w-56 bg-white shadow-md rounded-lg -mt-2">
+                    <div className="absolute overflow-hidden top-full left-0 w-60 bg-white shadow-md rounded-b-lg py-2 -mt-1">
                       <Link
-                        href="/service1"
-                        className="block px-4 py-2 hover:bg-gray-100"
+                        href="/services/construction"
+                        className="block px-4 py-2 hover:font-medium hover:bg-gray-100"
                       >
                         We Supervise Constructions
                       </Link>
                       <Link
-                        href="/service2"
-                        className="block px-4 py-2 hover:bg-gray-100"
+                        href="/services/procurement"
+                        className="subLink"
                       >
                         We Source Supplies
                       </Link>
                       <Link
-                        href="/service3"
-                        className="block px-4 py-2 hover:bg-gray-100"
+                        href="/services/labour-sourcing"
+                        className="subLink"
                       >
                         We Source Labour
                       </Link>
                       <Link
-                        href="/service4"
-                        className="block px-4 py-2 hover:bg-gray-100"
+                        href="/services/business-growth"
+                        className="subLink"
                       >
                         We Manage Biz Expansion
                       </Link>

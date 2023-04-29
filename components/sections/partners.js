@@ -9,14 +9,14 @@ export default function Partners() {
   return (
     <>
       <section className="sectionDefault lg:flex lg:justify-between space-y-20 lg:space-y-0 text-myWhite bg-secondary">
-        <div className="w-full lg:w-[40%] space-y-24">
+        <div className="w-full space-y-20 lg:space-y-0 flex flex-col justify-between lg:w-[40%]">
           <div className="space-y-8">
             <h1 className="uppercase headingOne">Sister Companies</h1>
             <p className="paragraph">
-              To bring our vision into reality, we need the best partners out
-              there. We've joined hands with one of the best when it comes to
-              materials, lightning and furniture to achieve sophisticated
-              results.
+              In our pursuit of achieving superior outcomes, we often collaborate 
+              with our affiliated entities and strategic partners known for their 
+              exceptional capabilities and expertise. Our approach ensures the delivery 
+              of professional and high-quality solutions.
             </p>
           </div>
           <Image src={Rectangle} alt="" className="rectangularBar" />

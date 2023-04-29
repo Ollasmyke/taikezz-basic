@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 export default function MobileMenu({ isOpen }) {
   const navMenu = [
@@ -9,21 +10,44 @@ export default function MobileMenu({ isOpen }) {
     },
     {
       name: 'Services',
-      link: '/pages/services',
+      subMenu: [
+        {
+          name: 'We Supervise Constructions',
+          link: '/services/construction',
+        },
+        {
+          name: 'We Source Supplies',
+          link: '/services/procurement',
+        },
+        {
+          name: 'We Source Labour',
+          link: '/services/labour-sourcing',
+        },
+        {
+          name: 'We Manage Biz Expansion',
+          link: '/services/business-growth',
+        },
+      ],
     },
     {
       name: 'Press',
-      link: '/pages/press',
+      link: '/press',
     },
     {
       name: 'Team',
-      link: '/pages/team',
+      link: '/team',
     },
     {
-      name: 'Contact',
-      link: '/pages/contact',
+      name: 'Contact Us',
+      link: '/contact',
     },
   ];
+
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
+  const handleServicesClick = () => {
+    setIsDropdownOpen(!isDropdownOpen);
+  };
 
   return (
     <nav
@@ -31,15 +55,53 @@ export default function MobileMenu({ isOpen }) {
         isOpen ? 'flex lg:hidden' : 'hidden'
       } fixed top-16 flex-col md:top-20 left-0 text-center py-10 w-full h-fit bg-white transition-all duration-300 ease-in-out`}
     >
-      {navMenu.map((link, name) => {
+      {navMenu.map((link, index) => {
         return (
-          <Link
-            key={name}
-            href={link.link}
-            className="flex-col font-jost text-base font-medium border-t border-b px-6 py-3 my-2 hover:bg-gray-100"
-          >
-            {link.name}
-          </Link>
+          <div key={index} className="relative">
+            <div
+              onClick={link.name === 'Services' ? handleServicesClick : null}
+              className={`servLink text-myBlack font-jost text-base font-medium hover:bg-gray-100 ${
+                link.subMenu ? 'cursor-pointer' : ''
+              }`}
+              style={{
+                display: 'flex',
+                width: '100%',
+                textAlign: 'left',
+              }}
+            >
+              {link.link ? (
+                <Link
+                  href={link.link}
+                  className="navLink w-full"
+                >
+                  {link.name}
+                </Link>
+              ) : (
+                <span>{link.name}</span>
+              )}
+              {link.subMenu && (
+                <ExpandMoreIcon
+                  className={`${
+                    isDropdownOpen ? 'rotate-180 ease-in' : 'w-5'
+                  } w-5 group-hover:rotate-180 ease-in transition-all duration-150 ml-3`}
+                />
+              )}
+            </div>
+            {link.subMenu && isDropdownOpen && link.name === 'Services' && (
+              <div className="relative py-1 mx-auto w-[90%] bg-white drop-shadow rounded-sm mt-1">
+                {link.subMenu.map((subLink, index) => (
+                  <div key={index}>
+                    <Link
+                      href={subLink.link}
+                      className="flex font-jost text-myBlack hover:font-medium text-[16px] border-x-0 border-t-0 border-b-gray-100 w-full border text-left pl-16 py-3 hover:bg-gray-100"
+                    >
+                      {subLink.name}
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         );
       })}
     </nav>
