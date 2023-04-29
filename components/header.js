@@ -40,19 +40,19 @@ export default function Header() {
     },
     {
       name: 'Services',
-      link: '/pages/services',
+      link: '/services',
     },
     {
       name: 'Press',
-      link: '/pages/press',
+      link: '/press',
     },
     {
       name: 'Team',
-      link: '/pages/team',
+      link: '/team',
     },
     {
       name: 'Contact Us',
-      link: '/pages/contact',
+      link: '/contact',
     },
   ];
 

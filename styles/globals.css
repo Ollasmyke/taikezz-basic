@@ -45,7 +45,7 @@ body {
   @apply block w-full h-[80vh] object-cover;
 }
 .slideBtn {
-  @apply absolute top-1/2 p-2.5 md:p-3.5 lg:p-4 bg-white/[0.6] text-black/[0.3] rounded-full border-[1.5px] border-white z-10 transform -translate-y-1/2 transition-opacity duration-300 hover:bg-white hover:text-myBlack/[0.7];
+  @apply absolute top-1/2 p-2.5 md:p-3.5 lg:p-4 bg-white/[0.6] text-black/[0.3] rounded-full border-[1.5px] border-myWhite z-10 transform -translate-y-1/2 transition-opacity duration-300 hover:bg-myWhite hover:text-myBlack/[0.7];
 }
 .sliderArrowIcon {
   @apply w-[70%] md:w-[80%] lg:w-full;

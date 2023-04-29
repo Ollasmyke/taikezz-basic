@@ -10,7 +10,7 @@ import MeetOurTeam from './../components/sections/meetOurTeam';
 import Partners from './../components/sections/partners';
 import ContactUs from './../components/sections/contactUs';
 
-export default function sections() {
+export default function Home() {
   return (
     <Layout title="Home ">
       <CarouselSlider />
