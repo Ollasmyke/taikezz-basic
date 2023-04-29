@@ -109,7 +109,7 @@ const CarouselSlider = () => {
     setTouchStartX(event.touches[0].clientX);
     setIsSwiping(true);
   };
-  
+
   const handleTouchMove = (event) => {
     if (isSwiping) {
       const touchCurrentX = event.touches[0].clientX;
@@ -125,11 +125,10 @@ const CarouselSlider = () => {
       }
     }
   };
-  
+
   const handleTouchEnd = () => {
     setIsSwiping(false);
   };
-  
 
   return (
     <div className="relative w-full h-[60vh] lg:h-[75vh]">
@@ -143,7 +142,7 @@ const CarouselSlider = () => {
             height={1000}
             priority={true}
             className={cn(
-              'absolute top-0 left-0 w-full h-full object-cover transition-opacity',
+              'absolute top-0 left-0 w-full h-full object-fill lg:object-cover transition-opacity',
               {
                 'opacity-100': activeIndex === index,
                 'opacity-0': activeIndex !== index,
@@ -169,10 +168,7 @@ const CarouselSlider = () => {
         <p className="text-base text-gray-800 leading-tight mb-7">
           {images[activeIndex].description}
         </p>
-        <Link
-          href={images[activeIndex].link}
-          className="ctaBtn"
-        >
+        <Link href={images[activeIndex].link} className="ctaBtn">
           Learn More
         </Link>
       </div>
