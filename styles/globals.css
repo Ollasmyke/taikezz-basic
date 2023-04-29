@@ -26,6 +26,9 @@ body {
 .servLink {
   @apply pl-12 py-2;
 }
+.subLink {
+  @apply block px-4 py-2 hover:font-medium hover:bg-gray-100;
+}
 .headingOne {
   @apply uppercase lg:text-5xl md:text-[40px] text-3xl md:w-full lg:leading-[60px] md:leading-[58px] leading-[40px];
 }
