@@ -50,6 +50,9 @@ body {
 .paragraph {
   @apply font-jost text-[16px] lg:text-[15px] font-light leading-7 lg:leading-6;
 }
+.paragraphBold {
+  @apply font-jost text-[16px] lg:text-[15px] font-normal leading-7 lg:leading-6;
+}
 .myDarkGray {
   @apply text-gray-500;
 }

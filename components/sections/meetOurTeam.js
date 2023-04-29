@@ -14,17 +14,17 @@ const team = [
   {
     src: '/images/ceo.jpg',
     name: 'Mrs Ololade',
-    title: 'Finance Manager',
+    title: 'Financial Controller',
   },
   {
     src: '/images/ceo.jpg',
     name: 'Mr Amos',
-    title: 'Personnel Manager',
+    title: 'Quality Assurance Manager',
   },
   {
     src: '/images/ceo.jpg',
     name: 'Another Staff',
-    title: 'Procurement Manager',
+    title: 'Project and Operational Manager',
   },
 ];
 
@@ -34,13 +34,14 @@ export default function MeetOurTeam() {
       <div className="w-full lg:w-[35%] lg:flex lg:flex-col lg:justify-between">
         <div className="space-y-6">
           <h1 className="headingOne">MEET OUR TEAM</h1>
-          <h4 className="paragraph">
-            A COLLECTIVE, THAT MAKES DREAMS COME TRUE
-          </h4>
-          <p className="paragraph text-myBlack lg:mt-5">
-            Our strength lies in our individuality. Set up by Esther Bryce,
-            Taikez team strives to bring in the best talent in various fields,
-            from architecture to interior design and sales.
+          <p className="paragraphBold font-medium text-myBlack lg:mt-5">
+            TAIKEZ CONSULTANCY boasts a highly qualified team of professionals, 
+            from our MD/CEO to our board of Directors, Quality Assurance Manager, 
+            Project and Operational Manager, Auditor, Financial Controller, Human 
+            Resource Manager, General Manager of Customer Service and Logistics, 
+            legal team, and motivated staff. We are committed to meeting your needs 
+            with respect, honesty, and dignity, delivering on our reputation as a 
+            respected consultancy company.
           </p>
         </div>
         <Image src={BlackRectangle} alt="" className="hidden rectangularBar" />
@@ -59,7 +60,7 @@ export default function MeetOurTeam() {
             <p className="text-base text-myBlack uppercase mt-5 lg:mt-5">
               {member.name}
             </p>
-            <p className="paragraph text-myBlack mt-1.5">{member.title}</p>
+            <p className="paragraphBold text-myBlack mt-1">{member.title}</p>
           </div>
         ))}
         <Image
