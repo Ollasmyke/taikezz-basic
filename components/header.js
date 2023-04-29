@@ -108,25 +108,25 @@ export default function Header() {
                   {isDropdownOpen && (
                     <div className="absolute overflow-hidden top-full left-0 w-60 bg-white shadow-md rounded-b-lg py-2 -mt-1">
                       <Link
-                        href="/service1"
+                        href="/services/construction"
                         className="block px-4 py-2 hover:font-medium hover:bg-gray-100"
                       >
                         We Supervise Constructions
                       </Link>
                       <Link
-                        href="/service2"
+                        href="/services/procurement"
                         className="subLink"
                       >
                         We Source Supplies
                       </Link>
                       <Link
-                        href="/service3"
+                        href="/services/labour-sourcing"
                         className="subLink"
                       >
                         We Source Labour
                       </Link>
                       <Link
-                        href="/service4"
+                        href="/services/business-growth"
                         className="subLink"
                       >
                         We Manage Biz Expansion

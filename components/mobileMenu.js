@@ -13,33 +13,33 @@ export default function MobileMenu({ isOpen }) {
       subMenu: [
         {
           name: 'We Supervise Constructions',
-          link: '/service1',
+          link: '/services/construction',
         },
         {
           name: 'We Source Supplies',
-          link: '/service2',
+          link: '/services/procurement',
         },
         {
           name: 'We Source Labour',
-          link: '/service3',
+          link: '/services/labour-sourcing',
         },
         {
           name: 'We Manage Biz Expansion',
-          link: '/service4',
+          link: '/services/business-growth',
         },
       ],
     },
     {
       name: 'Press',
-      link: '/pages/press',
+      link: '/press',
     },
     {
       name: 'Team',
-      link: '/pages/team',
+      link: '/team',
     },
     {
       name: 'Contact Us',
-      link: '/pages/contact',
+      link: '/contact',
     },
   ];
 
