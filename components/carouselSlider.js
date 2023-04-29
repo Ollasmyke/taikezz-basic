@@ -59,6 +59,8 @@ const images = [
 ];
 
 const CarouselSlider = () => {
+  const carouselRef = useRef(null);
+
   const [activeIndex, setActiveIndex] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const intervalRef = useRef(null);
@@ -100,6 +102,35 @@ const CarouselSlider = () => {
     setIsPaused(false);
   };
 
+  const [touchStartX, setTouchStartX] = useState(0);
+  const [isSwiping, setIsSwiping] = useState(false);
+
+  const handleTouchStart = (event) => {
+    setTouchStartX(event.touches[0].clientX);
+    setIsSwiping(true);
+  };
+  
+  const handleTouchMove = (event) => {
+    if (isSwiping) {
+      const touchCurrentX = event.touches[0].clientX;
+      const touchDeltaX = touchCurrentX - touchStartX;
+      if (touchDeltaX > 50) {
+        // Swipe to the right
+        handlePrevClick();
+        setIsSwiping(false);
+      } else if (touchDeltaX < -50) {
+        // Swipe to the left
+        handleNextClick();
+        setIsSwiping(false);
+      }
+    }
+  };
+  
+  const handleTouchEnd = () => {
+    setIsSwiping(false);
+  };
+  
+
   return (
     <div className="relative w-full h-[60vh] lg:h-[75vh]">
       <div className="absolute top-0 left-0 w-full h-full">
@@ -124,9 +155,13 @@ const CarouselSlider = () => {
         ))}
       </div>
       <div
+        ref={carouselRef}
         className="font-jost w-[70%] md:w-[50%] lg:w-[40%] px-4 pt-3 pb-7 absolute bottom-1/2 translate-y-1/2 bg-white/[0.7] left-1/2 transform -translate-x-1/2 text-center"
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onTouchStart={handleTouchStart}
+        onTouchMove={handleTouchMove}
+        onTouchEnd={handleTouchEnd}
       >
         <h3 className="text-base md:text-xl text-myBlack leading-tight md:leading-normal font-medium border-b pb-2 mb-3">
           {images[activeIndex].alt}
